@@ -33,7 +33,7 @@ public class ValServe extends HttpServlet {
 		  pw.print("<br>Password="+Password); 
 		  try {
 		  Class.forName("com.mysql.jdbc.Driver"); 
-		  Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/emp","root","tushar97@"); 
+		  Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/emp","root","root"); 
 		  PreparedStatement pst=con.prepareStatement("select * from loginpage where Username=? and Password=?");
 		  pst.setString(1, Username); 
 		  pst.setString(2, Password); 
